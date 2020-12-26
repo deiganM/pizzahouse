@@ -8,8 +8,6 @@
             <h2>Pizza List</h2>
         </div>
 
-        <p>{{ $name }} - {{ $age }}</p>
-
         @foreach ($pizzas as $pizza)
             <div>
                 {{$loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
