@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', [PizzaController::class, 'index']);
-
-Route::get('/pizzas/{id}', [PizzaController::class, 'show']);
+Route::get('/pizzas/create', [PizzaController::class, 'create']);
+Route::post('/pizzas', [PizzaController::class, 'store']);
 // wildcard route
+Route::get('/pizzas/{id}', [PizzaController::class, 'show']);
+Route::delete('/pizzas/{id}', [PizzaController::class, 'destroy']);

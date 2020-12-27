@@ -16,9 +16,15 @@
         </div>
     @endif
 
-    <div class="center title">
+    <div>
         <img src="./img/pizza-house.png" alt="Pizza House logo">
-        <h1>The North's Best Pizzas</h1>
+        <div class="center title">
+            <h1>The North's Best Pizzas</h1>
+        </div>
+        <div class="center">
+            <p class="mssg">{{ session('mssg') }}</p>
+            <a href="/pizzas/create">Order a pizza</a>
+        </div>
     </div>
 
 </div>
